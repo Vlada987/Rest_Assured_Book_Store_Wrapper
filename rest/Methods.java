@@ -43,9 +43,6 @@ public class Methods {
 		setBaseUrl(context.baseURL);
 		RequestSpecification reqSpec = authorization(context.auth);
 
-		if (!context.requestHeaderParams.isEmpty()) {
-			reqSpec.headers(context.responseHeaderParams);
-		}
 		if (!context.pathParams.isEmpty()) {
 			reqSpec.pathParams(context.pathParams);
 		}
